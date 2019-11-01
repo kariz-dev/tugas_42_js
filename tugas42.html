@@ -1,0 +1,32 @@
+<!-- Tugas 42 Javascript -->
+<!-- Muhammad Rizwan -->
+
+<!-- Soal -->
+<!-- 
+    -Buatlah sebuah elemen p dengan dua event tersebut isikan text Dekatkan Mouse
+    -Pada saat elemen itu didekatkan mousenya maka warna tulisan berubah menjadi merah 
+    -Pada saat mouse dijauhkan dari element tulisan akan berubah menjadi hitam 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p onmouseover="dekat(this)" onmouseout="jauh(this)">Dekatkan Mouse</p>
+
+    <script type="text/javascript">
+        function dekat(x) {
+            x.style.color = "red";
+        }
+
+        function jauh(y) {
+            y.style.color = "black";
+        }
+    </script>
+</body>
+</html>
